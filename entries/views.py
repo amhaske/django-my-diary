@@ -7,6 +7,7 @@ from django.views.generic import (
     DeleteView,
 )
 from .models import Entry
+from django.urls import reverse_lazy
 
 class EntryListView(ListView):
     model = Entry
